@@ -1,0 +1,16 @@
+name: app_domain
+description: A starting point for Dart libraries or applications.
+publish_to: none
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  updatable:
+    path: "/Users/usuario/Documents/KC-BOOTCAMP-XII/flutter/KC/DAVID/updatable"
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0

@@ -1,0 +1,26 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    avoid_print: true
+    # Calling toString on a runtime type is a non-trivial 
+    # operation that can negatively impact performance. 
+    # Eat me.
+    no_runtimeType_toString: false 
+    # Of course the comparison of unrelated should return false
+    unrelated_type_equality_checks: false
+    # better to have this deactivetd for beginners
+    prefer_const_constructors: false
+    # go fuck yourself
+    sort_pub_dependencies: false
+    # no initializing formals right now
+    prefer_initializing_formals: false
+    # Why da fuck?
+    avoid_positional_boolean_parameters: false
+    
+
